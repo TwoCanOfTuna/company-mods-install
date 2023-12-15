@@ -113,16 +113,7 @@ function Install ($arguments) {
     Write-Host "Installed BepInEx"
     Write-Host ""
 
-    # Download and install lcapi
-    # Write-Host "Downloading and installing LC_API"
-    # $lcapiVersion = Get-Arg $arguments "-lcapi"
-    # $lcapiUrl = "https://thunderstore.io/package/download/2018/LC_API/$lcapiVersion/"
-    # $lcapiStream = Request-Stream $lcapiUrl
-    # Expand-Stream $lcapiStream $lethalCompanyPath
-    # Write-Host "Installed LC_API"
-    # Write-Host ""
-
-    # Download and install lethallib
+    # Download and install lethallib library
     Write-Host "Downloading and installing LethalLib"
     $lethalLibVersion = Get-Arg $arguments "-lethallib"
     $lethalLibUrl = "https://thunderstore.io/package/download/Evaisa/LethalLib/$lethalLibVersion/"
@@ -132,7 +123,7 @@ function Install ($arguments) {
     Write-Host "Installed LethalLib"
     Write-Host ""
 
-    # Download and install hookgen
+    # Download and install hookgen library
     Write-Host "Downloading and installing HookGen"
     $hookGenVersion = Get-Arg $arguments "-hookgen"
     $hookGenUrl = "https://thunderstore.io/package/download/Evaisa/HookGenPatcher/$hookGenVersion/"
@@ -141,15 +132,6 @@ function Install ($arguments) {
     Expand-Stream $hookGenStream $hookGenPath
     Write-Host "Installed HookGen"
     Write-Host ""
-
-    # Download and install biggerlobby
-    # Write-Host "Downloading and installing BiggerLobby"
-    # $biggerLobbyVersion = Get-Arg $arguments "-biggerlobby"
-    # $biggerLobbyUrl = "https://thunderstore.io/package/download/bizzlemip/BiggerLobby/$biggerLobbyVersion/"
-    # $biggerLobbyStream = Request-Stream $biggerLobbyUrl
-    # Expand-Stream $biggerLobbyStream $lethalCompanyPath
-    # Write-Host "Installed BiggerLobby"
-    # Write-Host ""
 
     # Download and install morecompany
     Write-Host "Downloading and installing MoreCompany"
@@ -178,6 +160,26 @@ function Install ($arguments) {
     $buyableShellsPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
     Expand-Stream $buyableShellsStream $buyableShellsPath
     Write-Host "Installed BuyableShells"
+    Write-Host ""
+
+    # Download and install youtubeboombox
+    Write-Host "Downloading and installing YoutubeBoombox"
+    $ytbbVersion = Get-Arg $arguments "-ytbb"
+    $ytbbUrl = "https://thunderstore.io/package/download/steven4547466/YoutubeBoombox/$ytbbVersion/"
+    $ytbbStream = Request-Stream $ytbbUrl
+    $ytbbPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+    Expand-Stream $ytbbStream $ytbbPath
+    Write-Host "Installed YoutubeBoombox"
+    Write-Host ""
+
+    # Download and install toomanyemotes
+    Write-Host "Downloading and installing TooManyEmotes"
+    $tmeVersion = Get-Arg $arguments "-tme"
+    $tmeUrl = "https://thunderstore.io/package/download/FlipMods/TooManyEmotes/$tmeVersion/"
+    $tmeStream = Request-Stream $tmeUrl
+    $tmePath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+    Expand-Stream $tmeStream $tmePath
+    Write-Host "Installed TooManyEmotes"
     Write-Host ""
 }
 
