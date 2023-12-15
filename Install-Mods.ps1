@@ -181,17 +181,6 @@ function Install ($arguments) {
     Expand-Stream $tmeStream $tmePath
     Write-Host "Installed TooManyEmotes"
     Write-Host ""
-
-    # Download and install helmetcamera
-    Write-Host "Downloading and installing HelmetCamera"
-    $filename = "BepInEx\plugins\HelmetCamera.dll"
-    $hcpath = Join-Path -Path $lethalCompanyPath -ChildPath $filename
-    $hcpathc = $hcpath -replace ' ', '` '
-    powershell -Command Invoke-WebRequest -uri "https://github.com/TwoCanOfTuna/company-mods-install/releases/download/company-mods-install3/HelmetCamera.dll" -OutFile $hcpathc
-    Write-Host "Installed HelmetCamera"
-    Write-Host "$hcpathc"
-    Write-Host ""
-
 }
 
 try {
