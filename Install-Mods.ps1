@@ -181,6 +181,15 @@ function Install ($arguments) {
     Expand-Stream $tmeStream $tmePath
     Write-Host "Installed TooManyEmotes"
     Write-Host ""
+
+    # Download and install helmetcamera
+    Write-Host "Downloading and installing HelmetCamera"
+    $hcUrl = "https://github.com/TwoCanOfTuna/company-mods-install/releases/download/company-mods-install3/HelmetCamera.dll"
+    $hcStream = Request-Stream $hcUrl
+    $hcPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+    Expand-Stream $hcStream $hcPath
+    Write-Host "Installed HelmetCamera"
+    Write-Host ""
 }
 
 try {
