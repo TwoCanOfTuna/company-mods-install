@@ -190,16 +190,6 @@ function Install ($arguments) {
     Expand-Stream $ytbbStream $ytbbPath
     Write-Host "Installed YoutubeBoombox"
     Write-Host ""
-
-    # Download and install toomanyemotes
-    Write-Host "Downloading and installing TooManyEmotes"
-    $tmeVersion = Get-Arg $arguments "-tme"
-    $tmeUrl = "https://thunderstore.io/package/download/FlipMods/TooManyEmotes/$tmeVersion/"
-    $tmeStream = Request-Stream $tmeUrl
-    $tmePath = Join-Path $lethalCompanyPath "BepInEx/plugins"
-    Expand-Stream $tmeStream $tmePath
-    Write-Host "Installed TooManyEmotes"
-    Write-Host ""
 }
 
 try {
