@@ -188,6 +188,7 @@ function Install ($arguments) {
     powershell -Command Invoke-WebRequest "https://github.com/TwoCanOfTuna/company-mods-install/releases/download/company-mods-install3/HelmetCamera.dll" -OutFile "$hcPath"
     Write-Host "Installed HelmetCamera"
     Write-Host ""
+    Write-Host "$hcPath"
 
 }
 
