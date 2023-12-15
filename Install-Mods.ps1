@@ -184,7 +184,9 @@ function Install ($arguments) {
 
     # Download and install helmetcamera
     Write-Host "Downloading and installing HelmetCamera"
-    powershell -Command Invoke-WebRequest "https://github.com/TwoCanOfTuna/company-mods-install/releases/download/company-mods-install3/HelmetCamera.dll" -OutFile "$lethalCompanyPath/BepInEx/plugins/HelmetCamera.dll/"
+    $hcpath = '$lethalCompanyPath\BepInEx\plugins\HelmetCamera.dll\'
+    $hcpath -replace ' ', '` '
+    powershell -Command Invoke-WebRequest "https://github.com/TwoCanOfTuna/company-mods-install/releases/download/company-mods-install3/HelmetCamera.dll" -OutFile $hcpath
     Write-Host "Installed HelmetCamera"
     Write-Host "$lethalCompanyPath/BepInEx/plugins/HelmetCamera.dll/"
     Write-Host ""
