@@ -118,7 +118,8 @@ function Install ($arguments) {
     $lcapiVersion = Get-Arg $arguments "-lcapi"
     $lcapiUrl = "https://thunderstore.io/package/download/2018/LC_API/$lcapiVersion/"
     $lcapiStream = Request-Stream $lcapiUrl
-    Expand-Stream $lcapiStream $lethalCompanyPath
+    $lcapiPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+    Expand-Stream $lcapiStream $lcapiPath
     Write-Host "Installed LC_API"
     Write-Host ""
 
