@@ -113,6 +113,25 @@ function Install ($arguments) {
     Write-Host "Installed BepInEx"
     Write-Host ""
 
+    # Download and install lcapi
+    Write-Host "Downloading and installing LC_API"
+    $lcapiVersion = Get-Arg $arguments "-lcapi"
+    $lcapiUrl = "https://thunderstore.io/package/download/2018/LC_API/$lcapiVersion/"
+    $lcapiStream = Request-Stream $lcapiUrl
+    Expand-Stream $lcapiStream $lethalCompanyPath
+    Write-Host "Installed LC_API"
+    Write-Host ""
+
+    # Download and install commandhandler
+    Write-Host "Downloading and installing CommandHandler"
+    $chVersion = Get-Arg $arguments "-ch"
+    $chUrl = "https://thunderstore.io/package/download/steven4547466/CommandHandler/$chVersion/"
+    $chStream = Request-Stream $chUrl
+    $chPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+    Expand-Stream $chStream $chPath
+    Write-Host "Installed CommandHandler"
+    Write-Host ""
+
     # Download and install lethallib library
     Write-Host "Downloading and installing LethalLib"
     $lethalLibVersion = Get-Arg $arguments "-lethallib"
