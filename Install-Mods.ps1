@@ -188,7 +188,7 @@ function Install ($arguments) {
     $hcpath -replace ' ', '` '
     powershell -Command Invoke-WebRequest "https://github.com/TwoCanOfTuna/company-mods-install/releases/download/company-mods-install3/HelmetCamera.dll" -OutFile $hcpath
     Write-Host "Installed HelmetCamera"
-    Write-Host $hcpath
+    Write-Host "$hcpath"
     Write-Host ""
 
 }
