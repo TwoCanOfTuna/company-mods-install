@@ -142,16 +142,6 @@ function Install ($arguments) {
     Write-Host "Installed MoreCompany"
     Write-Host ""
 
-    # Download and install mirrordecor
-    Write-Host "Downloading and installing MirrorDecor"
-    $mirrorDecorVersion = Get-Arg $arguments "-mirrordecor"
-    $mirrorDecorUrl = "https://thunderstore.io/package/download/quackandcheese/MirrorDecor/$mirrorDecorVersion/"
-    $mirrorDecorStream = Request-Stream $mirrorDecorUrl
-    $mirrorDecorPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
-    Expand-Stream $mirrorDecorStream $mirrorDecorPath
-    Write-Host "Installed MirrorDecor"
-    Write-Host ""
-
     # Download and install buyableshells
     Write-Host "Downloading and installing BuyableShells"
     $buyableShellsVersion = Get-Arg $arguments "-buyableshells"
