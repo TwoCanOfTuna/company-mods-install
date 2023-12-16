@@ -113,25 +113,6 @@ function Install ($arguments) {
     Write-Host "Installed BepInEx"
     Write-Host ""
 
-    # Download and install lcapi
-    Write-Host "Downloading and installing LC_API"
-    $lcapiVersion = Get-Arg $arguments "-lcapi"
-    $lcapiUrl = "https://thunderstore.io/package/download/2018/LC_API/$lcapiVersion/"
-    $lcapiStream = Request-Stream $lcapiUrl
-    Expand-Stream $lcapiStream $lethalCompanyPath
-    Write-Host "Installed LC_API"
-    Write-Host ""
-
-    # Download and install commandhandler
-    Write-Host "Downloading and installing CommandHandler"
-    $chVersion = Get-Arg $arguments "-ch"
-    $chUrl = "https://thunderstore.io/package/download/steven4547466/CommandHandler/$chVersion/"
-    $chStream = Request-Stream $chUrl
-    $chPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
-    Expand-Stream $chStream $chPath
-    Write-Host "Installed CommandHandler"
-    Write-Host ""
-
     # Download and install lethallib library
     Write-Host "Downloading and installing LethalLib"
     $lethalLibVersion = Get-Arg $arguments "-lethallib"
@@ -181,14 +162,22 @@ function Install ($arguments) {
     Write-Host "Installed BuyableShells"
     Write-Host ""
 
-    # Download and install youtubeboombox
-    Write-Host "Downloading and installing YoutubeBoombox"
-    $ytbbVersion = Get-Arg $arguments "-ytbb"
-    $ytbbUrl = "https://thunderstore.io/package/download/steven4547466/YoutubeBoombox/$ytbbVersion/"
-    $ytbbStream = Request-Stream $ytbbUrl
-    $ytbbPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
-    Expand-Stream $ytbbStream $ytbbPath
-    Write-Host "Installed YoutubeBoombox"
+    # Download and install helmetcamera
+    Write-Host "Downloading and installing HelmetCamera"
+    $hcVersion = Get-Arg $arguments "-hc"
+    $hcUrl = "https://thunderstore.io/package/download/RickArg/Helmet_Cameras/$hcVersion/"
+    $hcStream = Request-Stream $hcUrl
+    Expand-Stream $hcStream $lethalCompanyPath
+    Write-Host "Installed HelmetCamera"
+    Write-Host ""
+
+    # Download and install soundboard
+    Write-Host "Downloading and installing Soundboard"
+    $sbVersion = Get-Arg $arguments "-sb"
+    $sbUrl = "https://thunderstore.io/package/download/Flof/MemeSoundboard/$sbVersion/"
+    $sbStream = Request-Stream $sbUrl
+    Expand-Stream $sbStream $lethalCompanyPath
+    Write-Host "Installed Soundboard"
     Write-Host ""
 }
 
