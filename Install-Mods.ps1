@@ -192,6 +192,36 @@ function Install ($arguments) {
     Expand-Stream $asStream $asPath
     Write-Host "Installed AdditionalSuits"
     Write-Host ""
+
+    # Download and install mirrordecor
+    Write-Host "Downloading and installing MirrorDecor"
+    $mirrorDecorVersion = Get-Arg $arguments "-mirrordecor"
+    $mirrorDecorUrl = "https://thunderstore.io/package/download/quackandcheese/MirrorDecor/$mirrorDecorVersion/"
+    $mirrorDecorStream = Request-Stream $mirrorDecorUrl
+    $mirrorDecorPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+    Expand-Stream $mirrorDecorStream $mirrorDecorPath
+    Write-Host "Installed MirrorDecor"
+    Write-Host ""
+
+    # Download and install mimics
+    Write-Host "Downloading and installing Mimics"
+    $mimicsVersion = Get-Arg $arguments "-mimics"
+    $mimicsUrl = "https://thunderstore.io/package/download/x753/Mimics/$mimicsVersion/"
+    $mimicsStream = Request-Stream $mimicsUrl
+    Expand-Stream $mimicsStream $lethalCompanyPath
+    Write-Host "Installed Mimics"
+    Write-Host ""
+
+    # Download and install coroner
+    Write-Host "Downloading and installing Coroner"
+    $cnVersion = Get-Arg $arguments "-cn"
+    $cnUrl = "https://thunderstore.io/package/download/EliteMasterEric/Coroner/$cnVersion/"
+    $cnStream = Request-Stream $cnUrl
+    $cnPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+    Expand-Stream $cnStream $cnPath
+    Write-Host "Installed Coroner"
+    Write-Host ""
+
 }
 
 try {
