@@ -220,8 +220,26 @@ function Install ($arguments) {
     $cnPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
     Expand-Stream $cnStream $cnPath
     Write-Host "Installed Coroner"
+
+    # Download and install buyableshotgun
+    Write-Host "Downloading and installing BuyableShotgun"
+    $bsVersion = Get-Arg $arguments "-bs"
+    $bsUrl = "https://thunderstore.io/package/download/MegaPiggy/BuyableShotgun/$bsVersion/"
+    $bsStream = Request-Stream $bsUrl
+    $bsPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+    Expand-Stream $bsStream $bsPath
+    Write-Host "Installed BuyableShotgun"
     Write-Host ""
 
+    # Download and install lethalpresents
+    Write-Host "Downloading and installing LethalPresents"
+    $lpVersion = Get-Arg $arguments "-lp"
+    $lpUrl = "https://thunderstore.io/package/download/Azim/LethalPresents/$lpVersion/"
+    $lpStream = Request-Stream $lpUrl
+    $lpPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+    Expand-Stream $lpStream $lpPath
+    Write-Host "Installed LethalPresents"
+    Write-Host ""
 }
 
 try {
