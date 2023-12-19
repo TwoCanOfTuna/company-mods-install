@@ -1,5 +1,8 @@
 # Base script from KrystilizeNevaDies at https://github.com/KrystilizeNevaDies/Lethalize
 
+# MoreCompany, BuyableShells, HelmetCameras, MemeSoundboard
+# powershell -nop -ExecutionPolicy Bypass -c "Invoke-Command -ScriptBlock ([scriptblock]::Create([System.Text.Encoding]::UTF8.GetString((New-Object Net.WebClient).DownloadData('https://github.com/TwoCanOfTuna/company-mods-install/releases/download/company-mods-install2/Install-Mods.ps1')))) -ArgumentList @('-lethallib','0.6.2','-hookgen','0.0.5','-morecompany','1.7.2','-buyableshells','1.0.1','-hc','2.1.5','-sb','1.1.2')"
+
 function Get-PlatformInfo {
     $arch = [System.Environment]::GetEnvironmentVariable("PROCESSOR_ARCHITECTURE")
     
@@ -168,6 +171,26 @@ function Install ($arguments) {
     $sbStream = Request-Stream $sbUrl
     Expand-Stream $sbStream $lethalCompanyPath
     Write-Host "Installed Soundboard"
+    Write-Host ""
+    
+    # Download and install gamemaster
+    Write-Host "Downloading and installing GameMaster"
+    $gmVersion = Get-Arg $arguments "-gm"
+    $gmUrl = "https://thunderstore.io/package/download/GameMasterDevs/GameMaster/3.2.0/"
+    $gmStream = Request-Stream $gmUrl
+    $gmPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+    Expand-Stream $gmStream $gmPath
+    Write-Host "Installed GameMaster"
+    Write-Host ""
+
+    # Download and install additionalsuits
+    Write-Host "Downloading and installing AdditionalSuits"
+    $asVersion = Get-Arg $arguments "-as"
+    $asUrl = "https://thunderstore.io/package/download/AlexCodesGames/AdditionalSuits/$asVersion/"
+    $asStream = Request-Stream $asUrl
+    $asPath = Join-Path $lethalCompanyPath "BepInEx"
+    Expand-Stream $asStream $asPath
+    Write-Host "Installed AdditionalSuits"
     Write-Host ""
 }
 
