@@ -172,16 +172,6 @@ function Install ($arguments) {
     Expand-Stream $sbStream $lethalCompanyPath
     Write-Host "Installed Soundboard"
     Write-Host ""
-    
-    # Download and install gamemaster
-    Write-Host "Downloading and installing GameMaster"
-    $gmVersion = Get-Arg $arguments "-gm"
-    $gmUrl = "https://thunderstore.io/package/download/GameMasterDevs/GameMaster/3.2.0/"
-    $gmStream = Request-Stream $gmUrl
-    $gmPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
-    Expand-Stream $gmStream $gmPath
-    Write-Host "Installed GameMaster"
-    Write-Host ""
 
     # Download and install additionalsuits
     Write-Host "Downloading and installing AdditionalSuits"
