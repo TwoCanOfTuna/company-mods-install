@@ -1,0 +1,10 @@
+}
+
+try {
+    Install $args
+    Write-Host "Install successful"
+} catch {
+    Write-Host "Install failed: $_"
+}
+
+Read-Host "Press Enter To Exit"
