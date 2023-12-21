@@ -1,8 +1,5 @@
 # Base script from KrystilizeNevaDies at https://github.com/KrystilizeNevaDies/Lethalize
 
-# MoreCompany, BuyableShells, HelmetCameras, MemeSoundboard
-# powershell -nop -ExecutionPolicy Bypass -c "Invoke-Command -ScriptBlock ([scriptblock]::Create([System.Text.Encoding]::UTF8.GetString((New-Object Net.WebClient).DownloadData('https://github.com/TwoCanOfTuna/company-mods-install/releases/download/company-mods-install2/Install-Mods.ps1')))) -ArgumentList @('-lethallib','0.6.2','-hookgen','0.0.5','-morecompany','1.7.2','-buyableshells','1.0.1','-hc','2.1.5','-sb','1.1.2')"
-
 function Get-PlatformInfo {
     $arch = [System.Environment]::GetEnvironmentVariable("PROCESSOR_ARCHITECTURE")
     
