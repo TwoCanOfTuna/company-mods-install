@@ -113,115 +113,185 @@ function Install ($arguments) {
     Write-Host "Installed BepInEx"
     Write-Host ""
 
-	Write-Host "Downloading and installing 96753"
-	$96753Version = Get-Arg $arguments "-96753"
-	$96753Url = "-https://thunderstore.io/package/download/Evaisa/HookGenPatcher/$96753Version/"
-	$96753Stream = Request-Stream $96753Url
-	$96753Path = Join-Path $lethalCompanyPath "BepInEx/plugins"
-	Expand-Stream $96753Stream $96753Path
-	Write-Host "Installed 96753"
+	Write-Host "Downloading and installing extensionalism"
+	$extensionalismVersion = Get-Arg $arguments "-extensionalism"
+	$extensionalismUrl = "https://thunderstore.io/package/download/Evaisa/HookGenPatcher/$extensionalismVersion/"
+	$extensionalismStream = Request-Stream $extensionalismUrl
+	$extensionalismPath = Join-Path $lethalCompanyPath "BepInEx"
+	Expand-Stream $extensionalismStream $extensionalismPath
+	Write-Host "Installed extensionalism"
 	Write-Host ""
 
-
-	Write-Host "Downloading and installing 53760"
-	$53760Version = Get-Arg $arguments "-53760"
-	$53760Url = "-https://thunderstore.io/package/download/Evaisa/LethalLib/$53760Version/"
-	$53760Stream = Request-Stream $53760Url
-	$53760Path = Join-Path $lethalCompanyPath "BepInEx/plugins"
-	Expand-Stream $53760Stream $53760Path
-	Write-Host "Installed 53760"
+	Write-Host "Downloading and installing legmen"
+	$legmenVersion = Get-Arg $arguments "-legmen"
+	$legmenUrl = "https://thunderstore.io/package/download/Evaisa/LethalLib/$legmenVersion/"
+	$legmenStream = Request-Stream $legmenUrl
+	$legmenPath = Join-Path $lethalCompanyPath "BepInEx"
+	Expand-Stream $legmenStream $legmenPath
+	Write-Host "Installed legmen"
 	Write-Host ""
 
-
-	Write-Host "Downloading and installing 88971"
-	$88971Version = Get-Arg $arguments "-88971"
-	$88971Url = "-https://thunderstore.io/package/download/notnotnotswipez/MoreCompany/$88971Version/"
-	$88971Stream = Request-Stream $88971Url
-	$88971Path = Join-Path $lethalCompanyPath "BepInEx/plugins"
-	Expand-Stream $88971Stream $88971Path
-	Write-Host "Installed 88971"
+	Write-Host "Downloading and installing capturers"
+	$capturersVersion = Get-Arg $arguments "-capturers"
+	$capturersUrl = "https://thunderstore.io/package/download/notnotnotswipez/MoreCompany/$capturersVersion/"
+	$capturersStream = Request-Stream $capturersUrl
+	$capturersPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $capturersStream $capturersPath
+	Write-Host "Installed capturers"
 	Write-Host ""
 
-
-	Write-Host "Downloading and installing 37458"
-	$37458Version = Get-Arg $arguments "-37458"
-	$37458Url = "-https://thunderstore.io/package/download/RickArg/Helmet_Cameras/$37458Version/"
-	$37458Stream = Request-Stream $37458Url
-	$37458Path = Join-Path $lethalCompanyPath "BepInEx/plugins"
-	Expand-Stream $37458Stream $37458Path
-	Write-Host "Installed 37458"
+	Write-Host "Downloading and installing chuckwalla"
+	$chuckwallaVersion = Get-Arg $arguments "-chuckwalla"
+	$chuckwallaUrl = "https://thunderstore.io/package/download/RickArg/Helmet_Cameras/$chuckwallaVersion/"
+	$chuckwallaStream = Request-Stream $chuckwallaUrl
+	$chuckwallaPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $chuckwallaStream $chuckwallaPath
+	Write-Host "Installed chuckwalla"
 	Write-Host ""
 
-
-	Write-Host "Downloading and installing 5853"
-	$5853Version = Get-Arg $arguments "-5853"
-	$5853Url = "-https://thunderstore.io/package/download/Flof/MemeSoundboard/$5853Version/"
-	$5853Stream = Request-Stream $5853Url
-	$5853Path = Join-Path $lethalCompanyPath "BepInEx/plugins"
-	Expand-Stream $5853Stream $5853Path
-	Write-Host "Installed 5853"
+	Write-Host "Downloading and installing maloca"
+	$malocaVersion = Get-Arg $arguments "-maloca"
+	$malocaUrl = "https://thunderstore.io/package/download/Flof/MemeSoundboard/$malocaVersion/"
+	$malocaStream = Request-Stream $malocaUrl
+	$malocaPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $malocaStream $malocaPath
+	Write-Host "Installed maloca"
 	Write-Host ""
 
-
-	Write-Host "Downloading and installing 47965"
-	$47965Version = Get-Arg $arguments "-47965"
-	$47965Url = "-https://thunderstore.io/package/download/quackandcheese/MirrorDecor/$47965Version/"
-	$47965Stream = Request-Stream $47965Url
-	$47965Path = Join-Path $lethalCompanyPath "BepInEx/plugins"
-	Expand-Stream $47965Stream $47965Path
-	Write-Host "Installed 47965"
+	Write-Host "Downloading and installing slovintzi"
+	$slovintziVersion = Get-Arg $arguments "-slovintzi"
+	$slovintziUrl = "https://thunderstore.io/package/download/quackandcheese/MirrorDecor/$slovintziVersion/"
+	$slovintziStream = Request-Stream $slovintziUrl
+	$slovintziPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $slovintziStream $slovintziPath
+	Write-Host "Installed slovintzi"
 	Write-Host ""
 
-
-	Write-Host "Downloading and installing 66292"
-	$66292Version = Get-Arg $arguments "-66292"
-	$66292Url = "-https://thunderstore.io/package/download/Electric131/OuijaBoard/$66292Version/"
-	$66292Stream = Request-Stream $66292Url
-	$66292Path = Join-Path $lethalCompanyPath "BepInEx/plugins"
-	Expand-Stream $66292Stream $66292Path
-	Write-Host "Installed 66292"
+	Write-Host "Downloading and installing falseface"
+	$falsefaceVersion = Get-Arg $arguments "-falseface"
+	$falsefaceUrl = "https://thunderstore.io/package/download/Electric131/OuijaBoard/$falsefaceVersion/"
+	$falsefaceStream = Request-Stream $falsefaceUrl
+	$falsefacePath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $falsefaceStream $falsefacePath
+	Write-Host "Installed falseface"
 	Write-Host ""
 
-
-	Write-Host "Downloading and installing 2758"
-	$2758Version = Get-Arg $arguments "-2758"
-	$2758Url = "-https://thunderstore.io/package/download/TheFluff/GetLootForKills/$2758Version/"
-	$2758Stream = Request-Stream $2758Url
-	$2758Path = Join-Path $lethalCompanyPath "BepInEx/plugins"
-	Expand-Stream $2758Stream $2758Path
-	Write-Host "Installed 2758"
+	Write-Host "Downloading and installing underrepresentation"
+	$underrepresentationVersion = Get-Arg $arguments "-underrepresentation"
+	$underrepresentationUrl = "https://thunderstore.io/package/download/TheFluff/GetLootForKills/$underrepresentationVersion/"
+	$underrepresentationStream = Request-Stream $underrepresentationUrl
+	$underrepresentationPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $underrepresentationStream $underrepresentationPath
+	Write-Host "Installed underrepresentation"
 	Write-Host ""
 
-
-	Write-Host "Downloading and installing 15433"
-	$15433Version = Get-Arg $arguments "-15433"
-	$15433Url = "-https://thunderstore.io/package/download/amnsoft/EmployeeAssignments/$15433Version/"
-	$15433Stream = Request-Stream $15433Url
-	$15433Path = Join-Path $lethalCompanyPath "BepInEx/plugins"
-	Expand-Stream $15433Stream $15433Path
-	Write-Host "Installed 15433"
+	Write-Host "Downloading and installing kannu"
+	$kannuVersion = Get-Arg $arguments "-kannu"
+	$kannuUrl = "https://thunderstore.io/package/download/amnsoft/EmployeeAssignments/$kannuVersion/"
+	$kannuStream = Request-Stream $kannuUrl
+	$kannuPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $kannuStream $kannuPath
+	Write-Host "Installed kannu"
 	Write-Host ""
 
-
-	Write-Host "Downloading and installing 79409"
-	$79409Version = Get-Arg $arguments "-79409"
-	$79409Url = "-https://thunderstore.io/package/download/Nebulaetrix/ExplosiveUnboxing/$79409Version/"
-	$79409Stream = Request-Stream $79409Url
-	$79409Path = Join-Path $lethalCompanyPath "BepInEx/plugins"
-	Expand-Stream $79409Stream $79409Path
-	Write-Host "Installed 79409"
+	Write-Host "Downloading and installing idiobiology"
+	$idiobiologyVersion = Get-Arg $arguments "-idiobiology"
+	$idiobiologyUrl = "https://thunderstore.io/package/download/Nebulaetrix/ExplosiveUnboxing/$idiobiologyVersion/"
+	$idiobiologyStream = Request-Stream $idiobiologyUrl
+	$idiobiologyPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $idiobiologyStream $idiobiologyPath
+	Write-Host "Installed idiobiology"
 	Write-Host ""
 
-
-	Write-Host "Downloading and installing 62128"
-	$62128Version = Get-Arg $arguments "-62128"
-	$62128Url = "-https://thunderstore.io/package/download/ZTK/ZTKCosmetics/$62128Version/"
-	$62128Stream = Request-Stream $62128Url
-	$62128Path = Join-Path $lethalCompanyPath "BepInEx/plugins"
-	Expand-Stream $62128Stream $62128Path
-	Write-Host "Installed 62128"
+	Write-Host "Downloading and installing tendance"
+	$tendanceVersion = Get-Arg $arguments "-tendance"
+	$tendanceUrl = "https://thunderstore.io/package/download/ZTK/ZTKCosmetics/$tendanceVersion/"
+	$tendanceStream = Request-Stream $tendanceUrl
+	$tendancePath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $tendanceStream $tendancePath
+	Write-Host "Installed tendance"
 	Write-Host ""
-}
+
+	Write-Host "Downloading and installing suberone"
+	$suberoneVersion = Get-Arg $arguments "-suberone"
+	$suberoneUrl = "https://thunderstore.io/package/download/broiiler/inacraft_cosmetics_megapack/$suberoneVersion/"
+	$suberoneStream = Request-Stream $suberoneUrl
+	$suberonePath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $suberoneStream $suberonePath
+	Write-Host "Installed suberone"
+	Write-Host ""
+
+	Write-Host "Downloading and installing abroach"
+	$abroachVersion = Get-Arg $arguments "-abroach"
+	$abroachUrl = "https://thunderstore.io/package/download/EliteMasterEric/WackyCosmetics/$abroachVersion/"
+	$abroachStream = Request-Stream $abroachUrl
+	$abroachPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $abroachStream $abroachPath
+	Write-Host "Installed abroach"
+	Write-Host ""
+
+	Write-Host "Downloading and installing sterile"
+	$sterileVersion = Get-Arg $arguments "-sterile"
+	$sterileUrl = "https://thunderstore.io/package/download/x753/More_Suits/$sterileVersion/"
+	$sterileStream = Request-Stream $sterileUrl
+	$sterilePath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $sterileStream $sterilePath
+	Write-Host "Installed sterile"
+	Write-Host ""
+
+	Write-Host "Downloading and installing chromatogram"
+	$chromatogramVersion = Get-Arg $arguments "-chromatogram"
+	$chromatogramUrl = "https://thunderstore.io/package/download/Verity/TooManySuits/$chromatogramVersion/"
+	$chromatogramStream = Request-Stream $chromatogramUrl
+	$chromatogramPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $chromatogramStream $chromatogramPath
+	Write-Host "Installed chromatogram"
+	Write-Host ""
+
+	Write-Host "Downloading and installing zaffres"
+	$zaffresVersion = Get-Arg $arguments "-zaffres"
+	$zaffresUrl = "https://thunderstore.io/package/download/MORT1F13R/MoreSuitColours/$zaffresVersion/"
+	$zaffresStream = Request-Stream $zaffresUrl
+	$zaffresPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $zaffresStream $zaffresPath
+	Write-Host "Installed zaffres"
+	Write-Host ""
+
+	Write-Host "Downloading and installing unexactly"
+	$unexactlyVersion = Get-Arg $arguments "-unexactly"
+	$unexactlyUrl = "https://thunderstore.io/package/download/GothKin/KinSuits/$unexactlyVersion/"
+	$unexactlyStream = Request-Stream $unexactlyUrl
+	$unexactlyPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $unexactlyStream $unexactlyPath
+	Write-Host "Installed unexactly"
+	Write-Host ""
+
+	Write-Host "Downloading and installing inmprovidence"
+	$inmprovidenceVersion = Get-Arg $arguments "-inmprovidence"
+	$inmprovidenceUrl = "https://thunderstore.io/package/download/GhostbustingTrio/CustomFunSuits/$inmprovidenceVersion/"
+	$inmprovidenceStream = Request-Stream $inmprovidenceUrl
+	$inmprovidencePath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $inmprovidenceStream $inmprovidencePath
+	Write-Host "Installed inmprovidence"
+	Write-Host ""
+
+	Write-Host "Downloading and installing squibbing"
+	$squibbingVersion = Get-Arg $arguments "-squibbing"
+	$squibbingUrl = "https://thunderstore.io/package/download/shackakahn/MemeTeamSkinPack/$squibbingVersion/"
+	$squibbingStream = Request-Stream $squibbingUrl
+	$squibbingPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $squibbingStream $squibbingPath
+	Write-Host "Installed squibbing"
+	Write-Host ""
+
+	Write-Host "Downloading and installing chirograph"
+	$chirographVersion = Get-Arg $arguments "-chirograph"
+	$chirographUrl = "https://thunderstore.io/package/download/anormaltwig/LateCompany/$chirographVersion/"
+	$chirographStream = Request-Stream $chirographUrl
+	$chirographPath = Join-Path $lethalCompanyPath "BepInEx/plugins"
+	Expand-Stream $chirographStream $chirographPath
+	Write-Host "Installed chirograph"
+	Write-Host ""}
 
 try {
     Install $args
@@ -231,3 +301,4 @@ try {
 }
 
 Read-Host "Press Enter To Exit"
+Exit
