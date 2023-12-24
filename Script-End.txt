@@ -8,3 +8,4 @@ try {
 }
 
 Read-Host "Press Enter To Exit"
+Exit

@@ -21,7 +21,7 @@ def add_end():
             break
         script_file.write(line)
 
-def add_mod(mod_link, mod_type):
+def add_mod(mod_link):
     global script_cmd
     
     rand = random_words.get_random_word()
@@ -32,10 +32,7 @@ def add_mod(mod_link, mod_type):
     script_file.write("\t$" + str(rand) + "Version = Get-Arg $arguments \"-" + str(rand) + "\"\n")
     script_file.write("\t$" + str(rand) + "Url = \"" + modified_url + "\"\n")
     script_file.write("\t$" + str(rand) + "Stream = Request-Stream $" + str(rand) + "Url\n")
-    if(mod_type == "library\n"):
-        script_file.write("\t$" + str(rand) + "Path = Join-Path $lethalCompanyPath \"BepInEx\"\n")
-    else:
-        script_file.write("\t$" + str(rand) + "Path = Join-Path $lethalCompanyPath \"BepInEx/plugins\"\n")
+    script_file.write("\t$" + str(rand) + "Path = Join-Path $lethalCompanyPath \"BepInEx/plugins\"\n")
     script_file.write("\tExpand-Stream $" + str(rand) + "Stream $" + str(rand) + "Path\n")
     script_file.write("\tWrite-Host \"Installed " + str(rand) + "\"\n")
     script_file.write("\tWrite-Host \"\"")
@@ -50,7 +47,6 @@ def main():
     print("Enter mod download links:\n")
     first = True
     while True:
-        mod_type = script_links.readline()
         mod_link = script_links.readline()
         print(mod_link)
         if mod_link == "":
@@ -59,7 +55,7 @@ def main():
         if first == False:
             script_cmd = script_cmd + ","
         first = False
-        add_mod(mod_link, mod_type)
+        add_mod(mod_link)
         
     add_end()
 
