@@ -2,39 +2,47 @@ library
 https://thunderstore.io/package/download/Evaisa/HookGenPatcher/0.0.5/
 library
 https://thunderstore.io/package/download/Evaisa/LethalLib/0.7.0/
-
+QOL - MORE COMPANY
 https://thunderstore.io/package/download/notnotnotswipez/MoreCompany/1.7.2/
-
+QOL - HELMET CAMERAS
 https://thunderstore.io/package/download/RickArg/Helmet_Cameras/2.1.5/
-
-https://thunderstore.io/package/download/Flof/MemeSoundboard/1.1.2/
-
+QOL - MIRROR
 https://thunderstore.io/package/download/quackandcheese/MirrorDecor/1.1.6/
-
-https://thunderstore.io/package/download/Electric131/OuijaBoard/1.4.0/
-
-https://thunderstore.io/package/download/TheFluff/GetLootForKills/1.1.3/
-
+QOL - EMPLOYEE TASKS
 https://thunderstore.io/package/download/amnsoft/EmployeeAssignments/1.0.8/
-
-https://thunderstore.io/package/download/Nebulaetrix/ExplosiveUnboxing/1.1.1/
-
+QOL - OUIJA BOARD
+https://thunderstore.io/package/download/Electric131/OuijaBoard/1.5.0/
+QOL - LATECOMPANY
+https://thunderstore.io/package/download/anormaltwig/LateCompany/1.0.7/
+QOL - CORONER
+https://thunderstore.io/package/download/EliteMasterEric/Coroner/1.5.0/
+COSMETICS - ANIME
 https://thunderstore.io/package/download/ZTK/ZTKCosmetics/1.4.1/
-
+COSMETICS - HOLOLIVE
 https://thunderstore.io/package/download/broiiler/inacraft_cosmetics_megapack/1.0.1/
-
+COSMETICS - MISC
 https://thunderstore.io/package/download/EliteMasterEric/WackyCosmetics/1.1.0/
-
+SUITS - BASE MOD
 https://thunderstore.io/package/download/x753/More_Suits/1.4.1/
-
+SUITS - ORGANIZATION
 https://thunderstore.io/package/download/Verity/TooManySuits/1.0.4/
-
+SUITS - RAINBOW
 https://thunderstore.io/package/download/MORT1F13R/MoreSuitColours/1.0.0/
-
-https://thunderstore.io/package/download/GothKin/KinSuits/1.0.0/
-
-https://thunderstore.io/package/download/GhostbustingTrio/CustomFunSuits/1.8.0/
-
+SUITS - MISC
+https://thunderstore.io/package/download/GhostbustingTrio/CustomFunSuits/1.8.1/
+SUITS - MISC
 https://thunderstore.io/package/download/shackakahn/MemeTeamSkinPack/1.0.2/
-
-https://thunderstore.io/package/download/anormaltwig/LateCompany/1.0.6/
+SUITS - SUIT
+https://thunderstore.io/package/download/GothKin/KinSuits/1.0.0/
+SUITS - RICK ASTLEY
+https://thunderstore.io/package/download/0nepeop1e/Rickroll_Suit/1.0.0/
+SUITS - LOVELIVE
+https://thunderstore.io/package/download/Kama/LoveLiveSuit/1.0.2/
+DIFFICULTY - MIMICS
+https://thunderstore.io/package/download/x753/Mimics/2.3.0/
+DIFFICULTY - SKINWALKERS
+https://thunderstore.io/package/download/RugbugRedfern/Skinwalkers/2.0.1/
+DIFFICULTY - LETHAL PRESENTS
+https://thunderstore.io/package/download/Azim/LethalPresents/1.0.3/
+DIFFICULTY - EXPLOSIVE PRESENTS
+https://thunderstore.io/package/download/Nebulaetrix/ExplosiveUnboxing/1.1.1/

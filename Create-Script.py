@@ -5,7 +5,7 @@ script_init = open("Script-Init.txt","r")
 script_end = open("Script-End.txt","r")
 script_links = open("Mod-List.txt","r")
 script_file = open("Install-Mods.ps1","w")
-script_cmd = "powershell -nop -ExecutionPolicy Bypass -c \"Invoke-Command -ScriptBlock ([scriptblock]::Create([System.Text.Encoding]::UTF8.GetString((New-Object Net.WebClient).DownloadData('https://github.com/TwoCanOfTuna/company-mods-install/releases/download/company-mods-install-update/Install-Mods.ps1')))) -ArgumentList @("
+script_cmd = "powershell -nop -ExecutionPolicy Bypass -c \"Invoke-Command -ScriptBlock ([scriptblock]::Create([System.Text.Encoding]::UTF8.GetString((New-Object Net.WebClient).DownloadData('https://github.com/TwoCanOfTuna/company-mods-install/releases/download/company-mods-install-vnx/Install-Mods.ps1')))) -ArgumentList @("
 
 def add_init():
     while True:
