@@ -1,0 +1,78 @@
+library
+https://thunderstore.io/package/download/Evaisa/HookGenPatcher/0.0.5/
+library
+https://thunderstore.io/package/download/Evaisa/LethalLib/0.10.1/
+QOL - MORE COMPANY
+https://thunderstore.io/package/download/notnotnotswipez/MoreCompany/1.7.2/
+QOL - LATECOMPANY
+https://thunderstore.io/package/download/anormaltwig/LateCompany/1.0.7/
+QOL - CORONER
+https://thunderstore.io/package/download/EliteMasterEric/Coroner/1.5.0/
+QOL - TOO MANY EMOTES
+https://thunderstore.io/package/download/FlipMods/TooManyEmotes/1.5.9/
+QOL - HELMET CAMERAS
+https://thunderstore.io/package/download/RickArg/Helmet_Cameras/2.1.5/
+QOL - MIRROR
+https://thunderstore.io/package/download/quackandcheese/MirrorDecor/1.1.6/
+QOL - GAMBLING MACHINE
+https://thunderstore.io/package/download/JunLethalCompany/GamblingMachineAtTheCompany/1.0.5/
+QOL - SHITGUN
+https://thunderstore.io/package/download/Shambi/LC_Shitgun/0.1.0/
+SUITS - BASE MOD
+https://thunderstore.io/package/download/x753/More_Suits/1.4.1/
+SUITS - ORGANIZATION
+https://thunderstore.io/package/download/Verity/TooManySuits/1.0.4/
+SUITS - MODELREPLACEMENTAPI
+https://thunderstore.io/package/download/BunyaPineTree/ModelReplacementAPI/2.2.1/
+SUITS - SUIT
+https://thunderstore.io/package/download/GothKin/KinSuits/1.0.0/
+SUITS - LOVELIVE
+https://thunderstore.io/package/download/Kama/LoveLiveSuit/1.0.2/
+SUITS - MASHU
+https://thunderstore.io/package/download/hu_luo_bo_ya/mashumodel/1.0.2/
+SUITS - SNOWBREEZE
+https://thunderstore.io/package/download/Sn0wBreeze/Snowbreeze_Model_Replacement/1.0.0/
+SUITS - BLUE ARCHIVE
+https://thunderstore.io/package/download/JerryOnStreak/Blue_Archive_Playermodels/1.0.0/
+SUITS - XoF
+https://thunderstore.io/package/download/XoFKon/XoF_Avatar_pack/1.0.5/
+SUITS - KOUME
+https://thunderstore.io/package/download/hu_luo_bo_ya/koumemodel/1.0.3/
+SUITS - BLENDER
+https://thunderstore.io/package/download/epic_cool_bacon_egg/BlenderSuit/1.0.0/
+SUITS - RAINBOW
+https://thunderstore.io/package/download/MORT1F13R/MoreSuitColours/1.0.0/
+SUITS - MISC
+https://thunderstore.io/package/download/GhostbustingTrio/CustomFunSuits/1.8.1/
+SUITS - MISC
+https://thunderstore.io/package/download/shackakahn/MemeTeamSkinPack/1.0.2/
+ITEMS - FUMO
+https://thunderstore.io/package/download/Badham_Mods/CirnoFumoScrap/1.2.1/
+ITEMS - FUMO
+https://thunderstore.io/package/download/silhygames/FumoCompany/1.1.0/
+ITEM - YIPPEE
+https://thunderstore.io/package/download/AinaVT/YippeeScrap/1.0.2/
+COSMETICS - PEACHBLOSSOMS
+https://thunderstore.io/package/download/PeachBlossoms/PeachBlossomsCosmetic/0.1.4/
+COSMETICS - ABSAS
+https://thunderstore.io/package/download/NiaNation/AbsasCosmetics/1.2.1/
+COSMETICS - ANIME
+https://thunderstore.io/package/download/ZTK/ZTKCosmetics/1.4.1/
+COSMETICS - HOLOLIVE
+https://thunderstore.io/package/download/broiiler/inacraft_cosmetics_megapack/1.0.1/
+COSMETICS - MISC
+https://thunderstore.io/package/download/EliteMasterEric/WackyCosmetics/1.1.0/
+MEME - MEME SOUNDBOARD
+https://thunderstore.io/package/download/Flof/MemeSoundboard/1.1.2/
+MEME - LASER REMOTE DETONATION
+https://thunderstore.io/package/download/Kittenji/LaserPointerDetonator/1.0.0/
+MEME - SCP-173 COILHEAD
+https://thunderstore.io/package/download/raydenoir/SCP173CoilheadSFX/1.2.3/
+MEME - FREDDY BRACKEN
+https://thunderstore.io/package/download/OrtonLongGaming/FreddyBracken/1.0.6/
+MEME - YIPPEE HOARDING BUG
+https://thunderstore.io/package/download/sunnobunno/YippeeMod/1.2.2/
+DIFFICULTY - MIMICS
+https://thunderstore.io/package/download/x753/Mimics/2.3.0/
+DIFFICULTY - EXPLOSIVE PRESENTS
+https://thunderstore.io/package/download/Nebulaetrix/ExplosiveUnboxing/1.1.1/

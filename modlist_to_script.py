@@ -1,11 +1,11 @@
 from random_word import RandomWords
 random_words = RandomWords()
 
-script_init = open("Script-Init.txt","r")
-script_end = open("Script-End.txt","r")
+script_init = open("References/Script-Init.txt","r")
+script_end = open("References/Script-End.txt","r")
 script_links = open("Mod-List.txt","r")
 script_file = open("Install-Mods.ps1","w")
-script_cmd = "powershell -nop -ExecutionPolicy Bypass -c \"Invoke-Command -ScriptBlock ([scriptblock]::Create([System.Text.Encoding]::UTF8.GetString((New-Object Net.WebClient).DownloadData('https://github.com/TwoCanOfTuna/company-mods-install/releases/download/company-mods-install-vnx/Install-Mods.ps1')))) -ArgumentList @("
+script_cmd = "powershell -nop -ExecutionPolicy Bypass -c \"Invoke-Command -ScriptBlock ([scriptblock]::Create([System.Text.Encoding]::UTF8.GetString((New-Object Net.WebClient).DownloadData('https://github.com/TwoCanOfTuna/company-mods-install/releases/download/lethal-install-vm/Install-Mods.ps1')))) -ArgumentList @("
 
 def add_init():
     while True:
@@ -34,6 +34,8 @@ def add_mod(mod_link, mod_type):
     script_file.write("\t$" + str(rand) + "Stream = Request-Stream $" + str(rand) + "Url\n")
     if(mod_type == "library\n"):
         script_file.write("\t$" + str(rand) + "Path = Join-Path $lethalCompanyPath \"BepInEx\"\n")
+    elif(mod_type == "lcapi\n"):
+        script_file.write("\t$" + str(rand) + "Path = Join-Path $lethalCompanyPath \"BepInEx/plugins/2018-LC_API\"\n")
     else:
         script_file.write("\t$" + str(rand) + "Path = Join-Path $lethalCompanyPath \"BepInEx/plugins\"\n")
     script_file.write("\tExpand-Stream $" + str(rand) + "Stream $" + str(rand) + "Path\n")
@@ -63,9 +65,13 @@ def main():
         
     add_end()
 
+    script_cmd_file = open("Command.txt", "w")
+    script_cmd_file.write(script_cmd)
+    script_cmd_file.close()
+    print(script_cmd)
+
 if __name__ == "__main__":
     main()
 
 script_init.close()
 script_file.close()
-print(script_cmd)
